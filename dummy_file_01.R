@@ -11,3 +11,5 @@ range(x)
 # length(x)
 
 # something something
+# more stuff
+library(dplyr)
