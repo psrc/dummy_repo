@@ -11,3 +11,7 @@ range(x)
 # length(x)
 
 # something something
+
+# Craig's Stuff -----------------------------------------------------------
+library(psrctrends)
+ofm.pop <- get_ofm_intercensal_population()
