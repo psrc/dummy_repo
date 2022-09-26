@@ -8,4 +8,4 @@ max(x)
 
 range(x)
 
-length(x)
+# length(x)
