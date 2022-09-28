@@ -18,6 +18,5 @@ range(x)
 # more stuff
 ofm.pop <- get_ofm_intercensal_population()
 ofm.pop %>% 
-  mutate(newcol = 'Test')
-
-
+  filter(filter == 1) %>% 
+  filter(jurisdiction == 'King County')
