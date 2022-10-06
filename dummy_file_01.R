@@ -1,5 +1,6 @@
 library(dplyr)
 library(psrctrends)
+library(stringr)
 
 # Here is a random R script
 
