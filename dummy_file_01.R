@@ -1,6 +1,7 @@
 library(dplyr)
 library(psrctrends)
 library(stringr)
+library(magrittr)
 
 # Here is a random R script
 
@@ -22,3 +23,7 @@ ofm.pop <- get_ofm_intercensal_population()
 df <- ofm.pop %>% 
   filter(Filter == 1) %>% 
   filter(Jurisdiction == 'King County')
+
+df %<>% 
+  rename_with(str_to_title, starts_with('regional'))
+  
