@@ -26,5 +26,6 @@ df <- ofm.pop %>%
 
 # clean clean df
 df %<>% 
-  rename_with(str_to_title, starts_with('regional'))
+  rename_with(str_to_title, starts_with('regional')) %>% 
+  mutate(Jurisdiction = str_extract(Jurisdiction, ".*(?=County)"))
   
