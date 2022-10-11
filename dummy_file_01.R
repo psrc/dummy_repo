@@ -24,7 +24,7 @@ df <- ofm.pop %>%
   filter(Filter == 1) %>% 
   filter(Jurisdiction == 'King County')
 
-# clean df
+# clean clean df
 df %<>% 
   rename_with(str_to_title, starts_with('regional'))
   
